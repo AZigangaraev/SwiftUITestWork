@@ -11,7 +11,6 @@ struct NoteAddView: View {
     @Environment(\.dismiss) var dismiss
     @State private var label = ""
     @State private var text = ""
-    @Binding var note: Note
     
     var body: some View {
         NavigationStack {
