@@ -20,7 +20,7 @@ struct MainView: View {
 
     var body: some View {
 
-        NavigationStack() {
+        NavigationStack(path: $navigationObject.path) {
             List {
                 Section("favorites") {
                     ForEach(notes.favoriteNotes) { note in
@@ -63,7 +63,7 @@ struct MainView: View {
                 .navigationDestination(for: Note.self) { note in
                     NoteCreatorView(title: note.title, text: note.text ?? "")
                 }
-        }
+        }.environmentObject(navigationObject)
     }
 }
 
