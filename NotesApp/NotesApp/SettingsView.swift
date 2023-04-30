@@ -10,7 +10,6 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @State private var isCompact = false
     @EnvironmentObject var settings: NoteSettings
     
     var body: some View {
@@ -20,7 +19,6 @@ struct SettingsView: View {
                     Text("Compact cells")
                     Spacer()
                     Toggle("", isOn: $settings.on)
-                        .labelsHidden()
                 }
             }
         }
