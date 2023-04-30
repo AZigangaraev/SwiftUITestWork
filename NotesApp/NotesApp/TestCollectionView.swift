@@ -23,29 +23,24 @@ struct CreateItem: Identifiable, Hashable {
 
 struct ItemCell: View {
     
-    @Binding var items: [Item]
     @Binding var item: Item
     @EnvironmentObject var settings: NoteSettings
     
     var body: some View {
-        NavigationLink(value: item) {
-            HStack {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(item.title)
-                        .font(Font.headline)
-                    if !settings.on {
-                        Text(item.value)
-                            .lineLimit(3)
-                    }
+        HStack {
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.title)
+                    .font(Font.headline)
+                if !settings.on {
+                    Text(item.value)
+                        .lineLimit(3)
                 }
-                Spacer()
-                Image(systemName: item.favorite ? "star.fill" : "star")
-                    .onTapGesture {
-                        if let index = items.firstIndex(where: { $0.id == item.id }) {
-                            items[index].favorite.toggle()
-                        }
-                    }
             }
+            Spacer()
+            Image(systemName: item.favorite ? "star.fill" : "star")
+                .onTapGesture {
+                    item.favorite.toggle()
+                }
         }
     }
 }
@@ -76,14 +71,26 @@ struct TestCollectionView: View {
             List {
                 Section(header: Text("Favorite")) {
                     ForEach(doneItems) { item in
-                        ItemCell(items: $items, item: $items[getIndex(for: item)])
+                        ItemCell(item: $items[getIndex(for: item)])
                             .environmentObject(settings)
+                            .overlay {
+                                NavigationLink(value: item) {
+                                    EmptyView()
+                                }
+                                .opacity(0)
+                            }
                     }
                 }
                 Section(header: Text("all")) {
                     ForEach(todoItems) { item in
-                        ItemCell(items: $items, item: $items[getIndex(for: item)])
+                        ItemCell(item: $items[getIndex(for: item)])
                             .environmentObject(settings)
+                            .overlay {
+                                NavigationLink(value: item) {
+                                    EmptyView()
+                                }
+                                .opacity(0)
+                            }
                     }
                 }
             }
