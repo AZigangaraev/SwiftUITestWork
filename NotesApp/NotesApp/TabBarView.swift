@@ -18,7 +18,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView {
-            MainView()
+            TestCollectionView()
                 .tabItem {
                     Text("Notes")
                     Image(systemName: "note")

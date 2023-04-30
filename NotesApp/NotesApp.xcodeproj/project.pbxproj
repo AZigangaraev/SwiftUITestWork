@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059A6FC229FDAE6900A10D99 /* TestCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A6FC129FDAE6900A10D99 /* TestCollectionView.swift */; };
 		05C01BEB29FD3AD200110DFD /* NotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BEA29FD3AD200110DFD /* NotesAppApp.swift */; };
 		05C01BED29FD3AD200110DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BEC29FD3AD200110DFD /* ContentView.swift */; };
 		05C01BEF29FD3AD400110DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C01BEE29FD3AD400110DFD /* Assets.xcassets */; };
 		05C01BF229FD3AD400110DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C01BF129FD3AD400110DFD /* Preview Assets.xcassets */; };
 		05C01BFA29FD3B5800110DFD /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BF929FD3B5800110DFD /* Note.swift */; };
 		05C01BFC29FD3F8700110DFD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BFB29FD3F8700110DFD /* TabBarView.swift */; };
-		05C01BFE29FD3FE500110DFD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BFD29FD3FE500110DFD /* MainView.swift */; };
 		05C01C0029FD3FEE00110DFD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01BFF29FD3FEE00110DFD /* SettingsView.swift */; };
 		05C01C0229FD454600110DFD /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C01C0129FD454600110DFD /* CreateNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059A6FC129FDAE6900A10D99 /* TestCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionView.swift; sourceTree = "<group>"; };
 		05C01BE729FD3AD200110DFD /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C01BEA29FD3AD200110DFD /* NotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppApp.swift; sourceTree = "<group>"; };
 		05C01BEC29FD3AD200110DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		05C01BF129FD3AD400110DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05C01BF929FD3B5800110DFD /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		05C01BFB29FD3F8700110DFD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		05C01BFD29FD3FE500110DFD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		05C01BFF29FD3FEE00110DFD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		05C01C0129FD454600110DFD /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +67,9 @@
 				05C01BEE29FD3AD400110DFD /* Assets.xcassets */,
 				05C01BF029FD3AD400110DFD /* Preview Content */,
 				05C01BFB29FD3F8700110DFD /* TabBarView.swift */,
-				05C01BFD29FD3FE500110DFD /* MainView.swift */,
 				05C01BFF29FD3FEE00110DFD /* SettingsView.swift */,
 				05C01C0129FD454600110DFD /* CreateNoteView.swift */,
+				059A6FC129FDAE6900A10D99 /* TestCollectionView.swift */,
 			);
 			path = NotesApp;
 			sourceTree = "<group>";
@@ -162,10 +162,10 @@
 			files = (
 				05C01BED29FD3AD200110DFD /* ContentView.swift in Sources */,
 				05C01BEB29FD3AD200110DFD /* NotesAppApp.swift in Sources */,
+				059A6FC229FDAE6900A10D99 /* TestCollectionView.swift in Sources */,
 				05C01C0229FD454600110DFD /* CreateNoteView.swift in Sources */,
 				05C01BFC29FD3F8700110DFD /* TabBarView.swift in Sources */,
 				05C01C0029FD3FEE00110DFD /* SettingsView.swift in Sources */,
-				05C01BFE29FD3FE500110DFD /* MainView.swift in Sources */,
 				05C01BFA29FD3B5800110DFD /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
